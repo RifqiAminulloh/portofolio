@@ -3,65 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Rifqi Aminulloh</title>
+    <title>Portofolio - Muhammad Rifqi Aminulloh</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="hero">
-            <div class="profile-container" data-aos="zoom-in">
-                <img src="assets/profile.jpg" alt="Rifqi Aminulloh" class="profile-img">
+            <video autoplay muted loop class="hero-video">
+                <source src="assets/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-content">
+                <div class="profile-container" data-aos="zoom-in">
+                    <img src="assets/profile.jpg" alt="Muhammad Rifqi Aminulloh" class="profile-img">
+                </div>
+                <h1 id="typing-effect"></h1>
+                <p id="typing-subtext"></p>
+                <div class="socials-hero">
+                    <a href="https://instagram.com/muhrifqiaminulloh" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/rifqiaminulloh" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
             </div>
-            <h1 id="typing-effect" data-aos="fade-up" data-aos-delay="300"></h1>
-            <p id="typing-subtext" data-aos="fade-up" data-aos-delay="600"></p>
         </div>
     </header>
 
     <!-- Visi Section -->
     <section class="vision" data-aos="fade-up">
-        <h2>Visi dalam Dunia Digital</h2>
-        <p>Sebagai seorang profesional di bidang digital marketing dan multimedia, saya percaya bahwa teknologi dan kreativitas adalah kunci utama dalam menciptakan solusi yang inovatif dan berdampak besar bagi bisnis dan masyarakat.</p>
+        <div class="vision-content">
+            <p>Sebagai seorang profesional di bidang digital marketing dan multimedia, saya percaya bahwa teknologi dan kreativitas adalah kunci utama dalam menciptakan solusi yang inovatif dan berdampak besar bagi bisnis dan masyarakat.</p>
+        </div>
     </section>
 
     <!-- Portfolio Section -->
     <section class="portfolio" data-aos="fade-up">
-        <h2>Portofolio</h2>
         <div class="gallery">
-            <img src="assets/portfolio1.jpg" alt="Website Development" data-aos="flip-left">
-            <img src="assets/portfolio2.jpg" alt="Photography" data-aos="flip-left" data-aos-delay="200">
-            <img src="assets/portfolio3.jpg" alt="Videography & Editing" data-aos="flip-left" data-aos-delay="400">
-            <img src="assets/portfolio4.jpg" alt="Design" data-aos="flip-left" data-aos-delay="600">
-            <img src="assets/portfolio5.jpg" alt="Social Media Management" data-aos="flip-left" data-aos-delay="800">
+            <div class="portfolio-item">
+                <img src="assets/portfolio1.jpg" alt="Website Development">
+                <p>Website Development</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/portfolio2.jpg" alt="Photography">
+                <p>Photography</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/portfolio3.jpg" alt="Videography & Editing">
+                <p>Videography & Editing</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/portfolio4.jpg" alt="Design">
+                <p>Design</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/portfolio5.jpg" alt="Social Media Management">
+                <p>Social Media Management</p>
+            </div>
         </div>
     </section>
 
     <!-- Sertifikasi Section -->
     <section class="certification" data-aos="fade-up">
-        <h2>Sertifikasi</h2>
-        <img src="assets/certification.jpg" alt="Sertifikat BNSP" data-aos="zoom-in">
-        <p>Tersertifikasi oleh BNSP Indonesia sebagai Digital Marketing Expert</p>
+        <div class="certification-content">
+            <img src="assets/certification.jpg" alt="Sertifikat BNSP">
+            <p>Tersertifikasi oleh BNSP Indonesia sebagai Digital Marketing Expert</p>
+        </div>
     </section>
 
     <!-- Shop Section -->
     <section class="shop" data-aos="fade-up">
-        <h2>Shop</h2>
-        <p><a href="https://www.fiverr.com/rifqi_aminulloh" target="_blank" data-aos="zoom-in">Kunjungi Fiverr Saya</a></p>
+        <div class="shop-content">
+            <div class="fiverr-profile">
+                <img src="assets/fiverr-profile.jpg" alt="Fiverr Profile">
+                <a href="https://www.fiverr.com/rifqi_aminulloh" target="_blank">Kunjungi Fiverr Saya</a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <div class="socials">
-            <a href="https://instagram.com/muhrifqiaminulloh" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://instagram.com/muhrifqiaminulloh" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://youtube.com/rifqiaminulloh" target="_blank" data-aos="zoom-in" data-aos-delay="400">
+            <a href="https://youtube.com/rifqiaminulloh" target="_blank">
                 <i class="fab fa-youtube"></i>
             </a>
         </div>
-        <p>© 2024 Rifqi Aminulloh</p>
+        <p>© 2024 Muhammad Rifqi Aminulloh</p>
     </footer>
 
     <!-- Scripts -->
@@ -73,21 +108,27 @@
         });
 
         // Typing Effect
-        const typingText = "Rifqi Aminulloh";
+        const typingText = "Muhammad Rifqi Aminulloh";
         const subText = "Digital Marketing Expert & Multimedia Enthusiast";
         const typingElement = document.getElementById("typing-effect");
         const subTextElement = document.getElementById("typing-subtext");
 
         let charIndex = 0;
         let subCharIndex = 0;
+        let isDeleting = false;
 
         function typeText() {
-            if (charIndex < typingText.length) {
+            if (charIndex < typingText.length && !isDeleting) {
                 typingElement.textContent += typingText.charAt(charIndex);
                 charIndex++;
                 setTimeout(typeText, 100);
+            } else if (charIndex > 0 && isDeleting) {
+                typingElement.textContent = typingText.substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(typeText, 50);
             } else {
-                setTimeout(typeSubText, 500);
+                isDeleting = !isDeleting;
+                setTimeout(typeText, 500);
             }
         }
 
@@ -96,10 +137,17 @@
                 subTextElement.textContent += subText.charAt(subCharIndex);
                 subCharIndex++;
                 setTimeout(typeSubText, 50);
+            } else {
+                setTimeout(() => {
+                    subTextElement.textContent = "";
+                    subCharIndex = 0;
+                    typeSubText();
+                }, 2000);
             }
         }
 
         typeText();
+        typeSubText();
     </script>
 </body>
 </html>
