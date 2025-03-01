@@ -12,9 +12,11 @@
     <!-- Header Section -->
     <header>
         <div class="hero">
-            <img src="assets/profile.jpg" alt="Rifqi Aminulloh" data-aos="zoom-in">
-            <h1 data-aos="fade-up" data-aos-delay="300">Rifqi Aminulloh</h1>
-            <p data-aos="fade-up" data-aos-delay="600">Digital Marketing Expert & Multimedia Enthusiast</p>
+            <div class="profile-container" data-aos="zoom-in">
+                <img src="assets/profile.jpg" alt="Rifqi Aminulloh" class="profile-img">
+            </div>
+            <h1 id="typing-effect" data-aos="fade-up" data-aos-delay="300"></h1>
+            <p id="typing-subtext" data-aos="fade-up" data-aos-delay="600"></p>
         </div>
     </header>
 
@@ -69,6 +71,35 @@
             duration: 1000,
             once: true,
         });
+
+        // Typing Effect
+        const typingText = "Rifqi Aminulloh";
+        const subText = "Digital Marketing Expert & Multimedia Enthusiast";
+        const typingElement = document.getElementById("typing-effect");
+        const subTextElement = document.getElementById("typing-subtext");
+
+        let charIndex = 0;
+        let subCharIndex = 0;
+
+        function typeText() {
+            if (charIndex < typingText.length) {
+                typingElement.textContent += typingText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeText, 100);
+            } else {
+                setTimeout(typeSubText, 500);
+            }
+        }
+
+        function typeSubText() {
+            if (subCharIndex < subText.length) {
+                subTextElement.textContent += subText.charAt(subCharIndex);
+                subCharIndex++;
+                setTimeout(typeSubText, 50);
+            }
+        }
+
+        typeText();
     </script>
 </body>
 </html>
