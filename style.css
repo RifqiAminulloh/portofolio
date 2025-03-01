@@ -53,28 +53,13 @@ header h1 {
     margin: 20px 0 10px;
     font-size: 2.5em;
     font-weight: bold;
-    color: #fff;
+    color: #000; /* Warna teks hitam */
     font-family: 'Playfair Display', serif;
 }
 
 header p {
     font-size: 1.2em;
-    color: #ccc;
-}
-
-header .socials-hero {
-    margin-top: 20px;
-}
-
-header .socials-hero a {
-    color: #fff;
-    font-size: 1.5em;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
-header .socials-hero a:hover {
-    color: #1DB954;
+    color: #000; /* Warna teks hitam */
 }
 
 /* Sections */
@@ -87,7 +72,7 @@ section {
     background: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
-.portfolio {
+.sosmed {
     background: linear-gradient(135deg, #34495e, #2c3e50);
 }
 
@@ -95,12 +80,13 @@ section {
     background: linear-gradient(135deg, #2c3e50, #34495e);
 }
 
-.shop {
-    background: linear-gradient(135deg, #34495e, #2c3e50);
+/* Sosmed Section */
+.sosmed .sosmed-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Portfolio Gallery */
-.portfolio .gallery {
+.sosmed .youtube-videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -108,41 +94,28 @@ section {
     margin-top: 40px;
 }
 
-.portfolio .portfolio-item {
+.sosmed .youtube-videos iframe {
     width: 100%;
-    max-width: 300px;
-    text-align: center;
-}
-
-.portfolio .portfolio-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+    max-width: 560px;
+    height: 315px;
+    border: none;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio .portfolio-item img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-}
-
-.portfolio .portfolio-item p {
-    margin-top: 10px;
-    font-size: 1.1em;
-    color: #ccc;
+.sosmed .instagram-posts {
+    margin-top: 40px;
 }
 
 /* Certification Section */
 .certification .certification-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
 .certification img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 10px;
 }
@@ -151,31 +124,6 @@ section {
     font-size: 1.1em;
     color: #ccc;
     max-width: 400px;
-}
-
-/* Shop Section */
-.shop .fiverr-profile {
-    text-align: center;
-}
-
-.shop .fiverr-profile img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.shop .fiverr-profile a {
-    color: #1DB954;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.shop .fiverr-profile a:hover {
-    color: #17a74e;
 }
 
 /* Footer Section */
@@ -212,18 +160,13 @@ footer p {
         font-size: 1em;
     }
 
-    .portfolio .portfolio-item {
-        width: 100%;
-        max-width: 100%;
-    }
-
     .certification .certification-content {
         flex-direction: column;
         text-align: center;
     }
 
     .certification img {
-        width: 150px;
+        width: 200px;
     }
 
     .certification p {
