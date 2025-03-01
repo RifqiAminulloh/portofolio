@@ -3,51 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Muhammad Rifqi Aminulloh</title>
+    <title>Portofolio - Rifqi Aminulloh</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="hero">
-            <img src="assets/profile.jpg" alt="Muhammad Rifqi Aminulloh">
-            <h1>Muhammad Rifqi Aminulloh</h1>
-            <p>Digital Marketing Expert & Multimedia Enthusiast</p>
+            <img src="assets/profile.jpg" alt="Rifqi Aminulloh" data-aos="zoom-in">
+            <h1 data-aos="fade-up" data-aos-delay="300">Rifqi Aminulloh</h1>
+            <p data-aos="fade-up" data-aos-delay="600">Digital Marketing Expert & Multimedia Enthusiast</p>
         </div>
     </header>
 
-    <section class="vision">
+    <!-- Visi Section -->
+    <section class="vision" data-aos="fade-up">
         <h2>Visi dalam Dunia Digital</h2>
-        <p>Sebagai seorang profesional di bidang digital marketing dan multimedia, saya percaya bahwa teknologi dan kreativitas adalah kunci utama dalam menciptakan solusi yang inovatif...</p>
+        <p>Sebagai seorang profesional di bidang digital marketing dan multimedia, saya percaya bahwa teknologi dan kreativitas adalah kunci utama dalam menciptakan solusi yang inovatif dan berdampak besar bagi bisnis dan masyarakat.</p>
     </section>
 
-    <section class="portfolio">
+    <!-- Portfolio Section -->
+    <section class="portfolio" data-aos="fade-up">
         <h2>Portofolio</h2>
         <div class="gallery">
-            <img src="assets/portfolio1.jpg" alt="Website Development">
-            <img src="assets/portfolio2.jpg" alt="Photography">
-            <img src="assets/portfolio3.jpg" alt="Videography & Editing">
-            <img src="assets/portfolio4.jpg" alt="Design">
-            <img src="assets/portfolio5.jpg" alt="Social Media Management">
+            <img src="assets/portfolio1.jpg" alt="Website Development" data-aos="flip-left">
+            <img src="assets/portfolio2.jpg" alt="Photography" data-aos="flip-left" data-aos-delay="200">
+            <img src="assets/portfolio3.jpg" alt="Videography & Editing" data-aos="flip-left" data-aos-delay="400">
+            <img src="assets/portfolio4.jpg" alt="Design" data-aos="flip-left" data-aos-delay="600">
+            <img src="assets/portfolio5.jpg" alt="Social Media Management" data-aos="flip-left" data-aos-delay="800">
         </div>
     </section>
 
-    <section class="certification">
+    <!-- Sertifikasi Section -->
+    <section class="certification" data-aos="fade-up">
         <h2>Sertifikasi</h2>
-        <img src="assets/certification.jpg" alt="BNSP Certified">
+        <img src="assets/certification.jpg" alt="Sertifikat BNSP" data-aos="zoom-in">
         <p>Tersertifikasi oleh BNSP Indonesia sebagai Digital Marketing Expert</p>
     </section>
 
-    <section class="shop">
+    <!-- Shop Section -->
+    <section class="shop" data-aos="fade-up">
         <h2>Shop</h2>
-        <p><a href="https://www.fiverr.com/rifqi_aminulloh" target="_blank">Kunjungi Fiverr Saya</a></p>
+        <p><a href="https://www.fiverr.com/rifqi_aminulloh" target="_blank" data-aos="zoom-in">Kunjungi Fiverr Saya</a></p>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <div class="socials">
-            <a href="https://instagram.com/muhrifqiaminulloh"><img src="assets/instagram.png" alt="Instagram"></a>
-            <a href="https://youtube.com/rifqiaminulloh"><img src="assets/youtube.png" alt="YouTube"></a>
+            <a href="https://instagram.com/muhrifqiaminulloh" target="_blank" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com/rifqiaminulloh" target="_blank" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fab fa-youtube"></i>
+            </a>
         </div>
-        <p>© 2025 Muhammad Rifqi Aminulloh</p>
+        <p>© 2024 Rifqi Aminulloh</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 </html>
