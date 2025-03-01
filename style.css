@@ -13,6 +13,7 @@ header {
     padding: 100px 20px;
     background: url('assets/hero.jpg') no-repeat center center/cover;
     position: relative;
+    overflow: hidden;
 }
 
 header::before {
@@ -30,7 +31,16 @@ header .hero {
     z-index: 1;
 }
 
-header .hero img {
+header .profile-container {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+header .profile-img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -42,6 +52,7 @@ header h1 {
     margin: 20px 0 10px;
     font-size: 2.5em;
     font-weight: bold;
+    color: #fff;
 }
 
 header p {
