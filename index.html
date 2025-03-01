@@ -76,6 +76,30 @@
         </div>
     </section>
 
+    <!-- Fiverr Section -->
+    <section class="fiverr" data-aos="fade-up">
+        <h2>Fiverr</h2>
+        <div class="fiverr-content">
+            <a href="https://www.fiverr.com/rifqi_aminulloh" target="_blank">Kunjungi Fiverr Saya</a>
+        </div>
+    </section>
+
+    <!-- Sosmed Section -->
+    <section class="sosmed" data-aos="fade-up">
+        <h2>YouTube & Instagram</h2>
+        <div class="sosmed-content">
+            <div class="youtube-videos">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="instagram-posts">
+                <!-- Instagram Embed -->
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CXyZ1Z1J1Q1/" data-instgrm-version="14"></blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer>
         <div class="socials">
@@ -111,14 +135,18 @@
             if (charIndex < typingText.length && !isDeleting) {
                 typingElement.textContent += typingText.charAt(charIndex);
                 charIndex++;
-                setTimeout(typeText, 100);
+                setTimeout(typeText, 150); // Diperlambat
             } else if (charIndex > 0 && isDeleting) {
                 typingElement.textContent = typingText.substring(0, charIndex - 1);
                 charIndex--;
                 setTimeout(typeText, 50);
             } else {
                 isDeleting = !isDeleting;
-                setTimeout(typeText, 500);
+                if (!isDeleting) {
+                    setTimeout(typeText, 1000); // Jeda sebelum mengulang
+                } else {
+                    setTimeout(typeText, 500);
+                }
             }
         }
 
@@ -129,8 +157,8 @@
                 setTimeout(typeSubText, 50);
             } else {
                 setTimeout(() => {
-                    subTextElement.textContent = "";
-                    subCharIndex = 0;
+                    subTextElement.textContent = subText.substring(0, subText.length - 10); // Hapus beberapa kata terakhir
+                    subCharIndex = subText.length - 10;
                     typeSubText();
                 }, 2000);
             }
