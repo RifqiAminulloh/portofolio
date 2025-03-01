@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Header Section */
 header {
     text-align: center;
     padding: 100px 20px;
@@ -49,7 +51,7 @@ header .profile-img {
 
 header h1 {
     margin: 20px 0 10px;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     color: #fff;
     font-family: 'Playfair Display', serif;
@@ -75,8 +77,9 @@ header .socials-hero a:hover {
     color: #1DB954;
 }
 
+/* Sections */
 section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -96,6 +99,7 @@ section {
     background: linear-gradient(135deg, #34495e, #2c3e50);
 }
 
+/* Portfolio Gallery */
 .portfolio .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -105,7 +109,8 @@ section {
 }
 
 .portfolio .portfolio-item {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     text-align: center;
 }
 
@@ -118,7 +123,7 @@ section {
 }
 
 .portfolio .portfolio-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
@@ -128,10 +133,11 @@ section {
     color: #ccc;
 }
 
+/* Certification Section */
 .certification .certification-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -147,6 +153,7 @@ section {
     max-width: 400px;
 }
 
+/* Shop Section */
 .shop .fiverr-profile {
     text-align: center;
 }
@@ -171,6 +178,7 @@ section {
     color: #17a74e;
 }
 
+/* Footer Section */
 footer {
     text-align: center;
     padding: 40px 20px;
@@ -192,4 +200,33 @@ footer p {
     margin-top: 20px;
     font-size: 0.9em;
     color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .portfolio .portfolio-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .certification .certification-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certification img {
+        width: 150px;
+    }
+
+    .certification p {
+        font-size: 1em;
+    }
 }
