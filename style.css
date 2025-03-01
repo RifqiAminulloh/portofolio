@@ -55,11 +55,13 @@ header h1 {
     font-weight: bold;
     color: #000; /* Warna teks hitam */
     font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Shadow untuk teks */
 }
 
 header p {
     font-size: 1.2em;
     color: #000; /* Warna teks hitam */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Shadow untuk teks */
 }
 
 header .socials-hero {
