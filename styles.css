@@ -213,27 +213,3 @@ footer {
     text-decoration: none;
     font-size: 1.5rem;
 }
-
-/* Greeting Animation */
-#greeting {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    color: #fff;
-    z-index: 10000;
-    animation: fadeOut 1s ease-in-out 3s forwards;
-}
-
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
